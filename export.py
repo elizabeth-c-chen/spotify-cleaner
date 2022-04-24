@@ -9,6 +9,7 @@ import pandas as pd
 def clean_filename(filename, replace=' '):
     """
     Modification of Safe Filename String Converter by wassname on GitHub
+    Modifications by elizabeth-c-chen on GitHub
     Original Source: https://gist.github.com/wassname/1393c4a57cfcbf03641dbc31886123b8
     """
     char_limit = 255
