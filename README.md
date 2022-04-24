@@ -1,4 +1,4 @@
-# IN PROGRESS!!! Library and Playlist Cleaner Tool for Spotify
+# IN PROGRESS! Library and Playlist Cleaner for Spotify
 
 ## Purpose of Tool
 This tool seeks to tidy up your Spotify collection by replacing multiple song versions (identical track from artist but different album name) with just one of the song versions throughout all playlists and your saved songs. For people like me who get annoyed by those kinds of things :)
@@ -17,7 +17,7 @@ This tool does NOT guarantee perfect results! I've tried to brainstorm potential
 ## How To Use
 ### Setup
 1. Create virtual environment and install required packages (`requirements.txt` file provided).
-2. Create Spotify developer credentials (Visit https://developer.spotify.com/dashboard/ and Create an App) and either directly modify the values in config_to_file.py or save them in your shell environment as `SPOTIFY_CLIENT_ID`, `SPOTIFY_CLIENT_SECRET`, and `SPOTIFY_REDIRECT_URI`.
+2. Create Spotify developer credentials (Visit https://developer.spotify.com/dashboard/ and Create an App) and either directly modify the values in `config_to_file.py` or save them in your shell environment as `SPOTIFY_CLIENT_ID`, `SPOTIFY_CLIENT_SECRET`, and `SPOTIFY_REDIRECT_URI`.
     * Client ID and Client Secret are given by the API on the App-Specific Dashboard
     * Redirect URI is chosen by you
         * I use `http://localhost:8787/` for simplicity. After you authenticate (in Step 3) and allow the app to access your Spotify library, it will redirect to a page saying "Server Not Found" (or something along those lines, depending on your OS) since there is no locally running web server for the callback. This is not a problem; just copy the current URL in your address bar and paste that into the terminal or Jupyter notebook text box when prompted.
